@@ -1,0 +1,22 @@
+<head>
+	<script src='bliss.js'></script>
+</head>
+<body data-app="app">
+</body>
+
+<!-- This is the application view/template -->
+<script language="bliss/v" data-namespace="app">
+    <p>Hello {{firstName}} {{lastName}}</p>
+    <p>{{fullName}}</p>
+</script>
+
+<!-- This is the application view-model/controller -->
+<script language="bliss/vm" data-namespace="app">
+    return {
+        'firstName': 'Bob',
+        'lastName': 'Dylan',
+        fullName() {
+            return `${this.firstName} ${this.lastName}`;
+        }
+    }
+</script>
