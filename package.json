@@ -4,7 +4,7 @@
   "description": "This package is part of a video+blog course about the inner workings of SPA \"frameworks\". It's goal is to introduce concepts that have made their way into popular frameworks/libraries over the last decade. For the purpose of learning we avoid the majority of edge cases and focus on the happy path.",
   "main": "bliss.js",
   "scripts": {
-    "lint": "/node_modules/eslint **/*.js",
+    "lint": "node_modules\\.bin\\eslint **/*.js",
     "test": "echo \"Warning: This project has no tests\" && exit 0"
   },
   "author": "claudio@medina.se",
